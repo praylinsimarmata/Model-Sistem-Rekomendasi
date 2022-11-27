@@ -45,7 +45,27 @@ Pengolahan data sampai di tahap ini, selanjutnya data yang sudah bersih ini akan
 
 
 ## Modeling 
+Pada tahap modelling ini digunakan algoritma KNN dengan tambahan tokenizer untuk mengidentifikasi kata kata yang sekolompok. Tidak hanya itu untuk memerbaiki kinerja dari program, ditambahkan *stop-word* supaya kata-kata yang diambil dalam bahasa inggris ini bukan kata penghubung dasar dan kata kerja dasar, melainkan benar-benar objek. Beberapa tahapan saat modelling, yakni:
 
+- Tahap 1: Mendefinisikan ranking model merupakan library dari tensorflow untuk tiap tiap kolom Rating, UserID, dan ProdukID, dengan bantuan tensorflow
+
+- Tahap 2: Setting untuk setiap model yang dilatih, supaya saat model pelatihan tidak terdapat duplikat yang menyebabkan memori berlebih dengan code ini:
+'''
+userIds    = recent_prod.userId.unique()
+productIds = recent_prod.productId.unique()
+total_ratings= len(recent_prod.index)
+'''
+- Tahap 3: Lakukan model training berdasarkan metriks RMSE, Loss yang sudah dituliskan pada code menjadi seperti dibawah ini. Untuk penjelasan metriks akan ada di tahap evaluation
+
+- Tahap 4: Uji coba prediksi dengan memanggil function model dengan parameter user id, sehingga menjadi:
+Keterangan : untuk produk ID yang tampil
+'''
+B002FFG6JC
+B004ABO7QI
+B006YW3DI4
+B0012YJQWQ
+B006ZBWV0K
+'''
 
 ## Evaluation
 
