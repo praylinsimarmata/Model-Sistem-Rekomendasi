@@ -21,12 +21,27 @@ Menjelaskan tujuan proyek yang menjawab pernyataan masalah:
 - Menanamkan algoritma CNN untuk mencoba mengevaluasi model dengan Metriks MSE dan LOSS sehingga lebih cepat
 
 ## Data Understanding
-- Dataset diperoleh dari Kaggle: https://www.kaggle.com/datasets/saurav9786/amazon-product-reviews
+Dataset diperoleh dari Kaggle: https://www.kaggle.com/datasets/saurav9786/amazon-product-reviews
+
+Berikut variabel-variabel yang terdapat pada dataset dan deskripsinya:
+
+- userId = ID user yang telah melakukan pembelian pada produk di website
+- productId = ID produk yang telah dibeli oleh user
+- rating = Rating dari produk yang dinilai oleh user pada produk
+- timestamp = Tanggal terjadinya transaksi
 
 ### Exploratory Data Analysis
 
 
 ## Data Preparation / Data Preprocessing
+Dalam mengelola data dilakukan beberapa pembersihan data yaitu mengubah string menjadi list hingga menyusun algoritma KNN untuk Clustering, detailnya:
+- Tahap 1: Memasukkan data, sebelumnya tabel yang ada tidak ada nama kolomnya tampil seperti ini :
+- Tahap 2: Dengan melihat dokumentasi sumber data, penulis melakukan rename kolom sehingga tanpak seperti ini :
+- Tahap 3: Seperti yang diajarkan dalam modul, pada tahap ini penulis berusaha untuk mempelajari distribusi data dan isinya dengan melakukan sintaks berikut ini:
+- Tahap 4: Setelah data muncul, tahap selanjutnya adalah mengecek ketersediaan isi pada kolom, karena ketika ada missing kolom ini akan menyebabkan sistem rekomendasi kurang optimal
+- Tahap 5: Mempelajari data dari parameter waktu dan rating, dengan begitu bisa dilihat bahwa untuk pemberian rating terbanyak itu pada tahun 2014 (gambar dibawah)
+
+Pengolahan data sampai di tahap ini, selanjutnya data yang sudah bersih ini akan diolah pada segment modelling
 
 
 ## Modeling 
