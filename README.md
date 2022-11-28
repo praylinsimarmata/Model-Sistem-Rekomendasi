@@ -1,20 +1,19 @@
 # Proyek Akhir : Membuat Model Sistem Rekomendasi
 
-## Domain Proyek
-Perusahaan e-commerce seperti Amazon biasanya menggunakan sistem rekomendasi yang berbeda untuk memberikan saran kepada pelanggan. Amazon saat ini menggunakan collaborative filtering items, yang menskalakan ke kumpulan dataset dan menghasilkan sistem rekomendasi berkualitas tinggi secara real time. Jenis pemfilteran ini mencocokkan setiap item yang dibeli dan diberi peringkat oleh pengguna dengan item serupa, lalu menggabungkan item serupa tersebut ke dalam daftar rekomendasi untuk pengguna. Dalam proyek ini akan dibuat model rekomendasi untuk produk elektronik Amazon. Sistem ini adalah sistem penyaringan informasi yang berusaha untuk memprediksi "rating" atau preferensi yang diminati oleh pengguna. 
+## Project Overview
+Perusahaan e-commerce seperti Amazon biasanya menggunakan sistem rekomendasi yang berbeda untuk memberikan saran kepada pelanggan. Amazon saat ini menggunakan *collaborative filtering items*, yang menskalakan kumpulan dataset dan menghasilkan sistem rekomendasi berkualitas tinggi secara real time. Jenis pemfilteran ini mencocokkan setiap item yang dibeli dan diberi peringkat oleh pengguna dengan item serupa, lalu menggabungkan item serupa tersebut ke dalam daftar rekomendasi untuk pengguna. Dalam proyek ini akan dibuat model rekomendasi untuk produk elektronik Amazon. Sistem ini adalah sistem penyaringan informasi yang berusaha untuk memprediksi produk teratas yang direkomendasikan untuk pengguna.
 
 ## Business Understanding
 Pelanggan yang mengunjungi website tentu ingin pengalaman yang terbaik. Hal tersebut memicu sistem e-commerce untuk terus beradaptasi dan terus menyesuaikan keinginan pelanggan. Ketika pelanggan melakukan pencarian tanpa adanya rekomendasi lainnya, pelanggan akan cenderung langsung meninggalkan e-commerce dan ini tentu akan merugikan perusahaan.
 
 ### Problem Statements
 Pernyataan masalah yang terdapat dalam proyek ini, yakni:
-
 - Pelanggan yang meninggalkan website setelah barang yang diinginkan terpenuhi
 - Tingkat pengunjung yang rendah karena tidak adanya sistem rekomendasi
-- Kurang efektifnya tingkat rekomendasi secara Clustering
+- Kurang efektifnya tingkat rekomendasi secara clustering
 
 ### Goals / Project Summary
-Menjelaskan tujuan proyek yang menjawab pernyataan masalah:
+Menjelaskan tujuan proyek yang akan menjawab pernyataan masalah:
 
 - Dapat merekomendasikan barang lain sehingga pelanggan tidak cepat cepat untuk pergi dari website kita
 - Meningkatkan tingkat pengunjung website dengan menampilkan rekomendasi sehingga pelanggan tetap betah di dalma website
@@ -44,7 +43,7 @@ Dalam mengelola data dilakukan beberapa pembersihan data yaitu mengubah string m
 Pengolahan data sampai di tahap ini, selanjutnya data yang sudah bersih ini akan diolah pada segment modelling
 
 
-## Modeling 
+## Modeling and Result
 Pada tahap modelling ini digunakan algoritma KNN dengan tambahan tokenizer untuk mengidentifikasi kata kata yang sekolompok. Tidak hanya itu untuk memerbaiki kinerja dari program, ditambahkan *stop-word* supaya kata-kata yang diambil dalam bahasa inggris ini bukan kata penghubung dasar dan kata kerja dasar, melainkan benar-benar objek. Beberapa tahapan saat modelling, yakni:
 
 - Tahap 1: Mendefinisikan ranking model merupakan library dari tensorflow untuk tiap tiap kolom Rating, UserID, dan ProdukID, dengan bantuan tensorflow
