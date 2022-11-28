@@ -78,7 +78,8 @@ total_ratings= len(recent_prod.index)
 ![image8](https://user-images.githubusercontent.com/99348807/204238920-398a96f5-d7b3-4a02-acd0-8fc9fc251640.jpg)
 
 ### Result
-- Tahap 4: Uji coba prediksi dengan memanggil function model dengan parameter user id. Berikut hasil yang ditampilkan:
+- Tahap 4: Uji coba prediksi dengan memanggil function model dengan parameter user id. Berikut hasil yang ditampilkan, yaitu Top 5 produk teratas yang direkomendasikan untuk pengguna.
+
 Keterangan : untuk produk ID yang tampil
 ```
 B002FFG6JC
