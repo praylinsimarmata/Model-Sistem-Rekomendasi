@@ -39,7 +39,7 @@ Berikut beberapa teknik visualisasi data beserta insight yang didapatkan dari da
 ![image5](https://user-images.githubusercontent.com/99348807/204231811-8be61473-0243-4570-bfd3-2f58419ea4fd.jpg)
 
 - Melihat banyaknya persebaran rating yang diberikan oleh pengguna
--
+
 ![image6](https://user-images.githubusercontent.com/99348807/204231812-00cebaf3-c54e-4279-b754-38820ddaf898.jpg)
 
 - Melihat produk teratas berdasarkan jumlah rating
