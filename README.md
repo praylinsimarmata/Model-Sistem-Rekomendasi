@@ -1,10 +1,10 @@
 # Proyek Akhir : Membuat Model Sistem Rekomendasi
 
 ## Project Overview
-Perusahaan e-commerce seperti Amazon biasanya menggunakan sistem rekomendasi yang berbeda untuk memberikan saran kepada pelanggan. Amazon saat ini menggunakan *collaborative filtering items*, yang menskalakan kumpulan dataset dan menghasilkan sistem rekomendasi berkualitas tinggi secara real time. Jenis pemfilteran ini mencocokkan setiap item yang dibeli dan diberi peringkat oleh pengguna dengan item serupa, lalu menggabungkan item serupa tersebut ke dalam daftar rekomendasi untuk pengguna. Dalam proyek ini akan dibuat model rekomendasi untuk produk elektronik Amazon. Sistem ini adalah sistem penyaringan informasi yang berusaha untuk memprediksi produk teratas yang direkomendasikan untuk pengguna.
+Perusahaan *e-commerce* seperti Amazon biasanya menggunakan sistem rekomendasi yang berbeda untuk memberikan saran kepada pelanggan. Amazon saat ini menggunakan *collaborative filtering items*, yang menskalakan kumpulan dataset dan menghasilkan sistem rekomendasi berkualitas tinggi secara *real time*. Jenis pemfilteran ini mencocokkan setiap item yang dibeli dan diberi peringkat oleh pengguna dengan item serupa, lalu menggabungkan item serupa tersebut ke dalam daftar rekomendasi untuk pengguna. Dalam proyek ini akan dibuat model rekomendasi untuk produk elektronik Amazon. Sistem ini adalah sistem penyaringan informasi yang berusaha untuk memberikan rekomendasi produk teratas yang diminati oleh pengguna.
 
 ## Business Understanding
-Pelanggan yang mengunjungi website tentu ingin pengalaman yang terbaik. Hal tersebut memicu sistem e-commerce untuk terus beradaptasi dan terus menyesuaikan keinginan pelanggan. Ketika pelanggan melakukan pencarian tanpa adanya rekomendasi lainnya, pelanggan akan cenderung langsung meninggalkan e-commerce dan ini tentu akan merugikan perusahaan.
+Pelanggan yang mengunjungi website tentu ingin pengalaman yang terbaik. Hal tersebut memicu sistem *e-commerce* untuk terus beradaptasi dan terus menyesuaikan keinginan pelanggan. Ketika pelanggan melakukan pencarian tanpa adanya rekomendasi lainnya, pelanggan akan cenderung langsung meninggalkan *e-commerce* dan ini tentu akan merugikan perusahaan.
 
 ### Problem Statements
 Pernyataan masalah yang terdapat dalam proyek ini, yakni:
@@ -14,16 +14,14 @@ Pernyataan masalah yang terdapat dalam proyek ini, yakni:
 
 ### Goals / Project Summary
 Menjelaskan tujuan proyek yang akan menjawab pernyataan masalah:
-
-- Dapat merekomendasikan barang lain sehingga pelanggan tidak cepat cepat untuk pergi dari website kita
-- Meningkatkan tingkat pengunjung website dengan menampilkan rekomendasi sehingga pelanggan tetap betah di dalma website
-- Menanamkan algoritma CNN untuk mencoba mengevaluasi model dengan Metriks MSE dan LOSS sehingga lebih cepat
+- Dapat merekomendasikan barang lain sehingga pelanggan tidak cepat cepat untuk pergi dari website
+- Meningkatkan tingkat pengunjung website dengan menampilkan rekomendasi sehingga pelanggan tetap betah di dalam website
+- Membuat model serta mengevaluasi model dengan Metriks MSE dan LOSS sehingga lebih cepat
 
 ## Data Understanding
-Dataset diperoleh dari Kaggle: https://www.kaggle.com/datasets/saurav9786/amazon-product-reviews
+Dataset pada proyek ini diperoleh dari Kaggle: https://www.kaggle.com/datasets/saurav9786/amazon-product-reviews
 
-Berikut variabel-variabel yang terdapat pada dataset dan deskripsinya:
-
+Berikut fitur-fitur yang terdapat pada dataset dan deskripsinya:
 - userId = ID user yang telah melakukan pembelian pada produk di website
 - productId = ID produk yang telah dibeli oleh user
 - rating = Rating dari produk yang dinilai oleh user pada produk
