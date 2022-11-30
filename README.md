@@ -90,8 +90,4 @@ B006ZBWV0K
 ```
 
 ## Evaluation
-Pada proyek ini digunakan metriks RMSE untuk pelatihan model. RMSE merupakan singkatan dari Root Means Squared Error. Berikut merupakan rumus dari RMSE: 
-
-![images9](https://user-images.githubusercontent.com/99348807/204239677-f7d933c3-6815-4a03-b512-62ed2a4660dc.png)
-
-Dalam penggunaan machine learning sistem rekomendasi ini, RMSE berperan untuk mencari bobot besar berdasarkan loss yang besar. RMSE digunakan karena tidak menginginkan outlier pada model. Hasil yang didapat dari RMSE cukup memuaskan (terdapat pada tahap 4). Dengan begitu, goals diawal untuk membuat rekomendasi yang sebelumnya menggunakan clustering berhasil dibuat dengan performa yang baik. Sehingga, ketika diterapkan di dalam model bisnis *e-commerce* pengguna tidak akan langsung meninggalkan *e-commerce* dengan cepat karena akan muncul item yang direkomendasikan. Tetapi, pengguna dapat melihat lihat rekomendasi dari produk yang bersangkutan dan hal itu dapat meningkatkan tingkat keramaian website.
+Pada proyek ini digunakan metriks RMSE untuk pelatihan model. RMSE merupakan singkatan dari Root Means Squared Error. Dalam penggunaan machine learning sistem rekomendasi ini, RMSE berperan untuk mencari bobot besar berdasarkan loss yang besar. RMSE digunakan karena tidak menginginkan outlier pada model. Hasil yang didapat dari RMSE cukup memuaskan (terdapat pada tahap 4). Dengan begitu, goals diawal untuk membuat rekomendasi yang sebelumnya menggunakan clustering berhasil dibuat dengan performa yang baik. Sehingga, ketika diterapkan di dalam model bisnis *e-commerce* pengguna tidak akan langsung meninggalkan *e-commerce* dengan cepat karena akan muncul item yang direkomendasikan. Tetapi, pengguna dapat melihat lihat rekomendasi dari produk yang bersangkutan dan hal itu dapat meningkatkan tingkat keramaian website.
