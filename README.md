@@ -1,4 +1,4 @@
-# Proyek Akhir : Membuat Model Sistem Rekomendasi
+# Proyek Akhir: Membuat Model Sistem Rekomendasi
 
 ## Project Overview
 Perusahaan *e-commerce* seperti Amazon biasanya menggunakan sistem rekomendasi yang berbeda untuk memberikan saran kepada pelanggan. Amazon saat ini menggunakan *collaborative filtering items*, yang menskalakan kumpulan dataset dan menghasilkan sistem rekomendasi berkualitas tinggi secara *real time*. Jenis pemfilteran ini mencocokkan setiap item yang dibeli dan diberi peringkat oleh pengguna dengan item serupa, lalu menggabungkan item serupa tersebut ke dalam daftar rekomendasi untuk pengguna. Dalam proyek ini akan dibuat model rekomendasi untuk produk elektronik Amazon. Sistem ini adalah sistem penyaringan informasi yang berusaha untuk memberikan rekomendasi produk teratas yang diminati oleh pengguna.
@@ -30,19 +30,38 @@ Berikut fitur-fitur yang terdapat pada dataset dan deskripsinya:
 ### Exploratory Data Analysis
 Berikut beberapa teknik visualisasi data beserta insight yang didapatkan dari dataset ini:
 
-- Melihat data berdasarkan waktu dan ratingnya
+- Melihat data berdasarkan waktu dan *rating*nya
 
-![image4](https://user-images.githubusercontent.com/99348807/204231808-2f99cf39-c3a5-41a7-8aca-1f2ce980c9b2.jpg)
+Melalui data ini dapat diketahui berapa banyak *rating* yang diterima oleh perusahaan per harinya.
 
-- Melihat grafik trends berdasarkan waktu dan total pemberian rating
+| Timestamp  | Rating |
+|------------|--------|
+| 2014-07-14 | 9701   |
+| 2014-07-15 | 6892   |
+| 2014-07-16 | 5943   |
+| 2014-07-17 | 4781   |
+| 2014-07-18 | 4912   |
+| 2014-07-19 | 4183   |
+| 2014-07-20 | 4273   |
+| 2014-07-21 | 5458   |
+| 2014-07-22 | 5010   |
+| 2014-07-23 | 695    |
+
+- Melihat grafik *trends* berdasarkan waktu dan total pemberian *rating*
+
+Melalui data ini dapat diketahui berapa banyak rating yang didapatkan per tahunnya. Dan diketahui bahwa *rating* terbanyak berada pada tahun 2014.
 
 ![image5](https://user-images.githubusercontent.com/99348807/204231811-8be61473-0243-4570-bfd3-2f58419ea4fd.jpg)
 
-- Melihat banyaknya persebaran rating yang diberikan oleh pengguna
+- Melihat banyaknya persebaran *rating* yang diberikan oleh pengguna
+
+Melalui data ini dapat diketahui bahwa terdapat > 50% *rating* bintang 5 yang diperoleh.
 
 ![image6](https://user-images.githubusercontent.com/99348807/204231812-00cebaf3-c54e-4279-b754-38820ddaf898.jpg)
 
-- Melihat produk teratas berdasarkan jumlah rating
+- Melihat produk teratas berdasarkan jumlah *rating*
+
+Kita dapat melihat produk-produk apa sajakah yang paling banyak diberikan *rating* oleh pengguna.
 
 ![image7](https://user-images.githubusercontent.com/99348807/204231813-23da8b20-b92a-4ff1-b411-8802c7eb99cd.jpg)
 
