@@ -30,7 +30,8 @@ Berikut fitur-fitur yang terdapat pada dataset dan deskripsinya:
 ### Melihat Info Data
 
 - Dataset ini merupakan *Dataset Amazon Product Reviews*. Data pada dataset ini berbentuk: (7824481, 4)
-- Data Describe
+- **Data Describe**
+
 Deskripsi data-data yang terdapat pada dataset ini ialah:
 
 |       |       rating |    timestamp |
@@ -44,7 +45,8 @@ Deskripsi data-data yang terdapat pada dataset ini ialah:
 |  75%  | 5.000000e+00 | 1.386115e+09 |
 |  max  | 5.000000e+00 | 1.406074e+09 |
 
-- Data Info
+- **Data Info**
+
 Memberikan info berupa tipe data pada setiap kolom yang ada pada dataset.
 
 | Column    | Dtype  |
