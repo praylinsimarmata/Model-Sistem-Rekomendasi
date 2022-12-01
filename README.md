@@ -137,19 +137,22 @@ Pengolahan data sampai di tahap ini, selanjutnya data yang sudah bersih akan dio
 ### Modeling
 Modeling pada proyek ini dilakukan dengan *TensorFlow Recommenders* (TFRS). *TensorFlow Recommenders* (TFRS) adalah *library* untuk membuat model sistem pemberi rekomendasi. Model ini dibangun menggunakan *Keras* dan bertujuan untuk memiliki kurva belajar yang lembut sambil tetap memberi fleksibilitas untuk membuat model yang kompleks. Beberapa tahapan yang dilakukan, yakni:
 - Tahap 1: Mendefinisikan ranking model yang merupakan *library* dari *TensorFlow* untuk tiap tiap kolom Rating, UserID, dan ProdukID.
-
-- Tahap 2: Setting untuk setiap model yang dilatih, supaya saat model pelatihan tidak terdapat duplikat yang menyebabkan memori berlebih.
+- Tahap 1: Melakukan Import Packages yaitu Import *tensorflow* dan *tensorflow_recommenders*
+- Tahap 2: Mendefinisikan RankingModel kedalam sebuah *class* menggunakan tf.keras.Model. Juga terdapat 3 kolom yang didefinisikan, yaitu pada kolom UserID, ProdukID, dan Rating. Yang mana pada setiap kolom terdapat tf.keras.Sequential yang digunakan untuk membuat dan melatih deep learning model.
+- Tahap 3: Membuat amazonModel kedalam sebuah *class* menggunakan tfrs.models.Model. Model sebelumnya yakni RankingModel juga dipanggil pada amazonModel. Model ini menggunakan layer dari TF Keras. Juga menggunakan tf.keras.losses.MeanSquaredError dan tf.keras.metrics.RootMeanSquaredError untuk mengukur metrics.
+- Tahap 4: Setting untuk setiap model yang dilatih, supaya saat model pelatihan tidak terdapat duplikat yang menyebabkan memori berlebih.
 ```
 userIds    = recent_prod.userId.unique()
 productIds = recent_prod.productId.unique()
 total_ratings= len(recent_prod.index)
 ```
-- Tahap 3: Melakukan *training* atau pelatihan model berdasarkan metriks *RMSE*, *Loss* dan memberikan hasil seperti di bawah ini:
+- Tahap 5: Data dibagi menjadi dua bagian dengan perbandingan 80% untuk *training* dan 20% untuk *testing*.
+- Tahap 6: Kemudian model yang telah dibuat dilatih atau di*training* berdasarkan metriks *RMSE* dan *Loss*. Berdasarkan hasil pelatihan data didapat hasil plot seperti di bawah ini:
 
-![image8](https://user-images.githubusercontent.com/99348807/204238920-398a96f5-d7b3-4a02-acd0-8fc9fc251640.jpg)
+![images10](https://user-images.githubusercontent.com/99348807/205070979-b01d62cc-bf0d-4a87-b125-2e4fabef39c7.jpg)
 
 ### Result
-- Tahap 4: Uji coba prediksi dengan memanggil *function* model dengan parameter user id. Berikut hasil yang ditampilkan, yaitu Top 5 produk teratas yang direkomendasikan untuk pengguna.
+- Tahap 7: Uji coba prediksi dengan memanggil *function* model dengan parameter user id. Berikut hasil yang ditampilkan, yaitu Top 5 produk teratas yang direkomendasikan untuk pengguna.
 
 Keterangan : untuk produk ID yang tampil
 ```
@@ -161,4 +164,12 @@ B006ZBWV0K
 ```
 
 ## Evaluation
-Pada proyek ini digunakan metriks *RMSE* untuk pelatihan model. *RMSE* merupakan singkatan dari *Root Means Squared Error*. Dalam penggunaan *machine learning* sistem rekomendasi ini, *RMSE* berperan untuk mencari bobot besar berdasarkan *loss* yang besar. *RMSE* digunakan karena tidak menginginkan *outlier* pada model. Hasil yang didapat dari *RMSE* cukup memuaskan (terdapat pada tahap 4). Dengan begitu, *goals* diawal untuk membuat rekomendasi berhasil dibuat dengan performa yang baik. Sehingga, ketika diterapkan di dalam model bisnis *e-commerce* pengguna tidak akan langsung meninggalkan *e-commerce* dengan cepat karena akan muncul item yang direkomendasikan. Tetapi, pengguna juga dapat melihat-lihat rekomendasi dari produk yang bersangkutan dan hal tersebut dapat menaikkan tingkat keramaian website.
+Pada proyek ini digunakan metriks *RMSE* untuk pelatihan model. *RMSE* merupakan singkatan dari *Root Means Squared Error*. Dalam penggunaan *machine learning* sistem rekomendasi ini, *RMSE* berperan untuk mencari bobot besar berdasarkan *loss* yang besar. *RMSE* digunakan karena tidak menginginkan *outlier* pada model. Dengan begitu, *goals* diawal untuk membuat rekomendasi berhasil dibuat dengan performa yang baik. Sehingga, ketika diterapkan di dalam model bisnis *e-commerce* pengguna tidak akan langsung meninggalkan *e-commerce* dengan cepat karena akan muncul item yang direkomendasikan. Tetapi, pengguna juga dapat melihat-lihat rekomendasi dari produk yang bersangkutan dan hal tersebut dapat menaikkan tingkat keramaian website.
+
+Berdasarkan evaluasi diperoleh hasil sebagai berikut:
+| Metrics                 | Value              |
+|-------------------------|--------------------|
+| root_mean_squared_error | 1.3098347187042236 |
+| loss                    | 1.776953935623169  |
+| regularization_loss     | 0                  |
+| total_loss              | 1.776953935623169  |
