@@ -14,7 +14,7 @@ Pernyataan masalah yang terdapat dalam proyek ini, yakni:
 
 ### Goals / Project Summary
 Menjelaskan tujuan proyek yang akan menjawab pernyataan masalah:
-- Dapat merekomendasikan barang lain sehingga pelanggan tidak cepat pergi dari website.
+- Dapat merekomendasikan barang lain sehingga pelanggan tidak cepat pergi dari *website*.
 - Meningkatkan tingkat pengunjung *website* dengan menampilkan rekomendasi sehingga pelanggan tetap betah berada di dalam *website*.
 - Membuat model serta mengevaluasi model dengan metriks *RMSE* dan *LOSS* sehingga lebih cepat.
 
