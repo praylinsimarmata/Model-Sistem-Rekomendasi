@@ -136,7 +136,7 @@ Pengolahan data sampai di tahap ini, selanjutnya data yang sudah bersih akan dio
 ## Modeling and Result
 ### Modeling
 Modeling pada proyek ini dilakukan dengan *TensorFlow Recommenders* (TFRS). *TensorFlow Recommenders* (TFRS) adalah *library* untuk membuat model sistem pemberi rekomendasi. Model ini dibangun menggunakan *Keras* dan bertujuan untuk memiliki kurva belajar yang lembut sambil tetap memberi fleksibilitas untuk membuat model yang kompleks. Beberapa tahapan yang dilakukan, yakni:
-- Tahap 1: Mendefinisikan ranking model yang merupakan *library* dari *TensorFlow* untuk tiap tiap kolom Rating, UserID, dan ProdukID.
+
 - Tahap 1: Melakukan Import Packages yaitu Import *tensorflow* dan *tensorflow_recommenders*
 - Tahap 2: Mendefinisikan RankingModel kedalam sebuah *class* menggunakan tf.keras.Model. Juga terdapat 3 kolom yang didefinisikan, yaitu pada kolom UserID, ProdukID, dan Rating. Yang mana pada setiap kolom terdapat tf.keras.Sequential yang digunakan untuk membuat dan melatih deep learning model.
 - Tahap 3: Membuat amazonModel kedalam sebuah *class* menggunakan tfrs.models.Model. Model sebelumnya yakni RankingModel juga dipanggil pada amazonModel. Model ini menggunakan layer dari TF Keras. Juga menggunakan tf.keras.losses.MeanSquaredError dan tf.keras.metrics.RootMeanSquaredError untuk mengukur metrics.
