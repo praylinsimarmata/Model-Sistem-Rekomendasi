@@ -164,7 +164,7 @@ B006ZBWV0K
 ```
 
 ## Evaluation
-Pada proyek ini digunakan metriks *RMSE* untuk pelatihan model. *RMSE* merupakan singkatan dari *Root Means Squared Error*. Dalam penggunaan *machine learning* sistem rekomendasi ini, *RMSE* berperan untuk mencari bobot besar berdasarkan *loss* yang besar. *RMSE* digunakan karena tidak menginginkan *outlier* pada model. Dengan begitu, *goals* diawal untuk membuat rekomendasi berhasil dibuat dengan performa yang baik. Sehingga, ketika diterapkan di dalam model bisnis *e-commerce* pengguna tidak akan langsung meninggalkan *e-commerce* dengan cepat karena akan muncul item yang direkomendasikan. Tetapi, pengguna juga dapat melihat-lihat rekomendasi dari produk yang bersangkutan dan hal tersebut dapat menaikkan tingkat keramaian website.
+Pada proyek ini digunakan metriks *RMSE* untuk pelatihan model. *RMSE* merupakan singkatan dari *Root Means Squared Error*. Dalam penggunaan *machine learning* sistem rekomendasi ini, *RMSE* berperan untuk mencari bobot besar berdasarkan *loss* yang besar. *RMSE* digunakan karena tidak menginginkan *outlier* pada model. Dengan begitu, *goals* diawal untuk membuat rekomendasi berhasil dibuat dengan performa yang baik. Sehingga, ketika diterapkan di dalam model bisnis *e-commerce* pengguna tidak akan langsung meninggalkan *e-commerce* dengan cepat karena akan muncul item yang direkomendasikan. Tetapi, pengguna juga dapat melihat-lihat rekomendasi dari produk yang bersangkutan dan hal tersebut dapat menaikkan tingkat keramaian *website*.
 
 Berdasarkan evaluasi diperoleh hasil sebagai berikut:
 | Metrics                 | Value              |
