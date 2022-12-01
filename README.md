@@ -14,8 +14,8 @@ Pernyataan masalah yang terdapat dalam proyek ini, yakni:
 
 ### Goals / Project Summary
 Menjelaskan tujuan proyek yang akan menjawab pernyataan masalah:
-- Dapat merekomendasikan barang lain sehingga pelanggan tidak cepat cepat untuk pergi dari website.
-- Meningkatkan tingkat pengunjung website dengan menampilkan rekomendasi sehingga pelanggan tetap betah di dalam website.
+- Dapat merekomendasikan barang lain sehingga pelanggan tidak cepat pergi dari website.
+- Meningkatkan tingkat pengunjung *website* dengan menampilkan rekomendasi sehingga pelanggan tetap betah berada di dalam *website*.
 - Membuat model serta mengevaluasi model dengan metriks *MSE* dan *LOSS* sehingga lebih cepat.
 
 ## Data Understanding
@@ -53,11 +53,6 @@ Memberikan info berupa tipe data pada setiap kolom yang ada pada dataset.
 | productId | object |
 | rating    | int8   |
 | timestamp | int64  |
-
-- Jumlah Ratings: 7,824,481
-- Jenis Kolom Yang Tersedia: ['userId' 'productId' 'rating' 'timestamp']
-- Jumlah User: 4,201,696
-- Jumlah Produk: 476,001
 
 ### Exploratory Data Analysis
 Berikut beberapa teknik visualisasi data beserta insight yang didapatkan dari dataset ini:
