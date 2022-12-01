@@ -8,9 +8,9 @@ Pelanggan yang mengunjungi website tentu ingin pengalaman yang terbaik. Hal ters
 
 ### Problem Statements
 Pernyataan masalah yang terdapat dalam proyek ini, yakni:
-- Pelanggan yang meninggalkan website setelah barang yang diinginkan terpenuhi.
-- Tingkat pengunjung yang rendah karena tidak adanya sistem rekomendasi.
-- Kurang efektifnya tingkat rekomendasi secara clustering.
+- Bagaimana caranya agar pelanggan tidak meninggalkan website setelah barang yang diinginkan terpenuhi.
+- Bagaimana tingkat pengunjung dapat meningkat.
+- Bagaimana memberikan sistem rekomendasi yang baik.
 
 ### Goals / Project Summary
 Menjelaskan tujuan proyek yang akan menjawab pernyataan masalah:
