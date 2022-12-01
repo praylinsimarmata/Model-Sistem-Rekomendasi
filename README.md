@@ -27,6 +27,33 @@ Berikut fitur-fitur yang terdapat pada dataset dan deskripsinya:
 - rating = Rating dari produk yang dinilai oleh user pada produk
 - timestamp = Tanggal terjadinya transaksi
 
+### Melihat Info Data
+
+- Data pada dataset ini berbentuk: (7824481, 4)
+- Data Describe
+|       |       rating |    timestamp |
+|------:|-------------:|-------------:|
+| count | 7.824481e+06 | 7.824481e+06 |
+|  mean | 4.012337e+00 | 1.338178e+09 |
+|  std  | 1.380910e+00 | 6.900426e+07 |
+|  min  | 1.000000e+00 | 9.127296e+08 |
+|  25%  | 3.000000e+00 | 1.315354e+09 |
+|  50%  | 5.000000e+00 | 1.361059e+09 |
+|  75%  | 5.000000e+00 | 1.386115e+09 |
+|  max  | 5.000000e+00 | 1.406074e+09 |
+
+- Data Info
+| userId    | object |
+|-----------|--------|
+| productId | object |
+| rating    | int8   |
+| timestamp | int64  |
+
+- Jumlah Ratings: 7,824,481
+- Jenis Kolom Yang Tersedia: ['userId' 'productId' 'rating' 'timestamp']
+- Jumlah User: 4,201,696
+- Jumlah Produk: 476,001
+
 ### Exploratory Data Analysis
 Berikut beberapa teknik visualisasi data beserta insight yang didapatkan dari dataset ini:
 
