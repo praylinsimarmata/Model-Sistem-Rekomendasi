@@ -31,6 +31,7 @@ Berikut fitur-fitur yang terdapat pada dataset dan deskripsinya:
 
 - Data pada dataset ini berbentuk: (7824481, 4)
 - Data Describe
+
 |       |       rating |    timestamp |
 |------:|-------------:|-------------:|
 | count | 7.824481e+06 | 7.824481e+06 |
@@ -43,6 +44,7 @@ Berikut fitur-fitur yang terdapat pada dataset dan deskripsinya:
 |  max  | 5.000000e+00 | 1.406074e+09 |
 
 - Data Info
+
 | userId    | object |
 |-----------|--------|
 | productId | object |
